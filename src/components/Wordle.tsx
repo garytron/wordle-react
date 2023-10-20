@@ -50,7 +50,7 @@ const Wordle: FC<WordleProps> = ({ solution, setNewSolution }) => {
   }
 
   return (
-    <div className='w-full h-screen flex flex-col justify-center'>
+    <div className='w-full h-screen flex flex-col justify-between'>
       <Navbar />
       <Grid currentGuess={currentGuess} guesses={guesses} turn={turn} />
       <Keypad usedKeys={usedKeys} handleClickKeypad={handleClickKeypad} />
