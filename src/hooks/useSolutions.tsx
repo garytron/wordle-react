@@ -7,7 +7,7 @@ const useSolutions = () => {
   useEffect(() => {
     const fetchFileContent = async () => {
       try {
-        const response = await fetch('/words.txt');
+        const response = await fetch('./words.txt');
         const content = await response.text();
         const lines = content.split('\n').filter(line => line.trim() !== '' && line.length === 5 && ((/^[A-Za-z]+$/).test(line.trim())));
 

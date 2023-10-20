@@ -91,17 +91,17 @@ const useWordle = (solution: string) => {
   
     if(keyValue === 'Enter') {
       if(turn > 4) {
-        console.log('you used all your guesses');
+        console.log('You used all your guesses');
         return;
       }
 
       if(history.includes(currentGuess)) {
-        console.log('you already tried that word');
+        console.log('You already tried that word');
         return;
       }
 
       if(currentGuess.length !== 5) {
-        console.log('word must be 5 chars long');
+        console.log('Word must be 5 chars long');
         return;
       }
 
@@ -129,17 +129,17 @@ const useWordle = (solution: string) => {
   
     if(letter === 'Enter') {
       if(turn > 4) {
-        console.log('you used all your guesses');
+        console.log('You used all your guesses');
         return;
       }
 
       if(history.includes(currentGuess)) {
-        console.log('you already tried that word');
+        console.log('You already tried that word');
         return;
       }
 
       if(currentGuess.length !== 5) {
-        console.log('word must be 5 chars long');
+        console.log('Word must be 5 chars long');
         return;
       }
 

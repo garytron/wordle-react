@@ -10,7 +10,6 @@ const Navbar = () => {
   const { openResults } = useStatistics();
 
   const switchTheme = () => {
-    console.log('dark', isDarkMode);
     if(isDarkMode) {
       document.documentElement.classList.remove('dark');
       setDarkMode(false);

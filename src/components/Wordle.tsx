@@ -17,7 +17,6 @@ const Wordle: FC<WordleProps> = ({ solution, setNewSolution }) => {
     if(!showTutorial) {
       window.addEventListener('keyup', handleKeyup);
   
-      console.log(showResults);
       if(isCorrect) {
         setNewSolution(isCorrect);
         setTimeout(() => openResults(), 2000);
@@ -36,7 +35,6 @@ const Wordle: FC<WordleProps> = ({ solution, setNewSolution }) => {
 
 
   useEffect(() => {
-    console.log('time', time, solution);
     if(time === 0) {
       setNewSolution(true);
       setCountTotal();
