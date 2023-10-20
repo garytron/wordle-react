@@ -115,7 +115,7 @@ const useWordle = (solution: string) => {
       return;
     }
 
-    if(/^[A-Za-z]$/.test(keyValue.toLowerCase())) {
+    if(/^[A-Za-zñÑ]$/.test(keyValue.toLowerCase())) {
       if(currentGuess.length < 5) {
         setCurrentGuess((prev) => prev + keyValue.toLowerCase())
       }
@@ -153,7 +153,7 @@ const useWordle = (solution: string) => {
       return;
     }
 
-    if(/^[A-Za-z]$/.test(letter.toLowerCase())) {
+    if(/^[A-Za-zñÑ]$/.test(letter.toLowerCase())) {
       if(currentGuess.length < 5) {
         setCurrentGuess((prev) => prev + letter.toLowerCase())
       }
