@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex items-center dark:bg-[#DADCE008] bg-[#F3F3F3] dark:text-white justify-between w-full max-w-[530px] min-h-[50px] mx-auto mt-5 mb-5 rounded-[10px]'>
+    <div className='flex items-center dark:bg-[#DADCE008] bg-[#F3F3F3] dark:text-white justify-between w-full md:max-w-[530px] min-h-[50px] mx-auto mt-5 mb-5 rounded-[10px]'>
       <div className='w-[15%] ml-5'>
         <span className='font-bold text-3xl uppercase' onClick={() => openTutorial()}><Icon className='cursor-pointer text-[#818181] dark:text-white'>help</Icon></span>
       </div>

@@ -16,7 +16,7 @@ const Tutorial = () => {
         <p className='text-start font-bold'>Ejemplos</p>
 
         <div className='flex justify-evenly'>
-          <SquareKey letter={{key: 'G', color: '#6AAA64'}} fixed />
+          <SquareKey letter={{key: 'G', color: 'green'}} />
           <SquareKey letter={{key: 'A', color: 'white'}} fixed />
           <SquareKey letter={{key: 'T', color: 'white'}} fixed />
           <SquareKey letter={{key: 'O', color: 'white'}} fixed />
@@ -28,7 +28,7 @@ const Tutorial = () => {
         <div className='flex justify-evenly'>
           <SquareKey letter={{key: 'V', color: 'white'}} fixed />
           <SquareKey letter={{key: 'O', color: 'white'}} fixed />
-          <SquareKey letter={{key: 'C', color: '#CEB02C'}} fixed />
+          <SquareKey letter={{key: 'C', color: 'yellow'}} />
           <SquareKey letter={{key: 'A', color: 'white'}} fixed />
           <SquareKey letter={{key: 'L', color: 'white'}} fixed />
         </div>
@@ -40,7 +40,7 @@ const Tutorial = () => {
           <SquareKey letter={{key: 'A', color: 'white'}} fixed />
           <SquareKey letter={{key: 'N', color: 'white'}} fixed />
           <SquareKey letter={{key: 'T', color: 'white'}} fixed />
-          <SquareKey letter={{key: 'O', color: '#939B9F'}} fixed />
+          <SquareKey letter={{key: 'O', color: 'grey'}} />
         </div>
 
         <p className='text-start mb-6'>La letra <span className='font-bold'>O</span> no está en la palabra.</p>
