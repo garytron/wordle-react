@@ -42,8 +42,8 @@ const Results: FC<ResultsProps> = ({ isCorrect, solution, turn, totalWins, total
           <p>Victorias</p>
         </div>
       </div>
-      {(!isCorrect && time === 0) && 
-        <p className='mb-6'>La palabra era: <span className='text-black font-bold uppercase tracking-wide text-sm'>{solution}</span></p>
+      {(!isCorrect && turn > 4 || time === 0) && 
+        <p className='mb-6'>La palabra era: <span className='text-black dark:text-white font-bold uppercase tracking-wide text-sm'>{solution}</span></p>
       }
       <p className='uppercase m-3'>Siguiente palabra</p>
       <p className='font-bold uppercase mb-6'>{convertSecondsToMMSS(time)}</p>

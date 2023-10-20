@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 
 const useTimer = (isCorrect: boolean, turn: number, showTutorial: boolean, setNewSolution: (isCorrect: boolean) => void) => {
-  const [time, setTime] = useState(5 * 60);   //5 minutes in seconds.
+  const SECONDS = 5 * 60;
+  const [time, setTime] = useState(SECONDS);   //5 minutes in seconds.
 
   useEffect(() => {
     let timer: number;
@@ -36,7 +37,7 @@ const useTimer = (isCorrect: boolean, turn: number, showTutorial: boolean, setNe
   }, [time, isCorrect, turn, setNewSolution, showTutorial]);
 
 
-  const resetTime = () => setTime(5 * 60);
+  const resetTime = () => setTime(SECONDS);
 
   return {time, resetTime};
 }
