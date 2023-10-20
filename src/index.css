@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom-green {
+  --background-color: #66A060;
+  --border-color: #66A060;
+}
+
+.bg-custom-yellow {
+  --background-color: #CEB02C;
+  --border-color: #CEB02C;
+}
+
+.bg-custom-grey {
+  --background-color: #939B9F;
+  --border-color: #939B9F;
+}
+
+.flip {
+  animation: flip 0.5s ease forwards;
+}
+
+.row > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.row > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.row > div:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.row > div:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.row.current > div.filled {
+  animation: bounce 0.2s ease-in-out forwards;
+}
+
+.keypad .key {
+  background-color: #eee;
+}
+
+.keypad .key.green {
+  background-color: #66A060;
+  border-color: #66A060;
+  transition: all 0.3s ease-in;
+}
+
+.keypad .key.yellow{
+  background-color: #CEB02C;
+  border-color: #CEB02C;
+  transition: all 0.3s ease-in;
+}
+
+.keypad .key.grey {
+  background-color: #939B9F;
+  border-color: #939B9F;
+  transition: all 0.3s ease-in;
+}
+
+.react-toggle-track-check, .react-toggle-track-x {
+  margin-top: 0px;
+}
+
+.react-toggle-track-check {
+  left: 4px;
+}
+
+.react-toggle-track-x {
+  right: 17px;
+}
+
+.react-toggle--checked .react-toggle-track {
+  background-color: rgba(0,0,0, 0.1) !important;
+}
+
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: rgba(0,0,0, 0.3);
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+    background: #fff;
+    border-color: #333;
+  }
+
+  45% {
+    transform: rotateX(90deg);
+    background: #fff;
+    border-color: #333;
+  }
+
+  55% {
+    transform: rotateX(90deg);
+    background: var(--background-color);
+    border-color: var(--border-color);
+    color: #eee;
+  }
+
+  100% {
+    transform: rotateX(0);
+    background: var(--background-color);
+    border-color: var(--border-color);
+    color: #eee;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+    border-color: #ddd;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    border-color: #333;
+  }
+}
